@@ -192,7 +192,7 @@ if st.button("Get ETA for Delivery!"):
     prediction = model.predict(scaled_data)
 
     # Display the prediction
-    st.write(f' **Your Food will arrive in minutes**): {prediction[0]}')
+    st.write(f' Blue[**Your Food will arrive in minutes**]): {prediction[0]}')
 
 
 
