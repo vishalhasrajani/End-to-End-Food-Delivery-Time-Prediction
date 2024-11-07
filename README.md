@@ -88,7 +88,7 @@ Future enhancements for this project include:
 
 ## 📬 Contact
 If you have questions or would like to discuss the project, feel free to connect:
-- [GitHub](https://github.com/VishalHasrajani)
-- [LinkedIn](https://linkedin.com/in/vishalhasrajani)
+- [GitHub](https://github.com/vishalhasrajani)
+- [LinkedIn](https://www.linkedin.com/in/vishal-hasrajani/)
 
 Happy coding! 🚀
