@@ -5,3 +5,4 @@ streamlit
 geopy
 scikit-learn
 requests
+xgboost
