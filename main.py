@@ -31,8 +31,8 @@ def extract_date_features(data):
     data['is_weekend'] = np.where(data['day_of_week'].isin([5, 6]), 1, 0)
 
 def calculate_time_diff(df):
-    df['Time_Orderd'] = pd.to_timedelta(df['Time_Orderd'])
-    df['Time_Order_picked'] = pd.to_timedelta(df['Time_Order_picked'])
+    df['Time_Orderd'] = pd.to_timedelta(df['Time_Orderd']).hour
+    df['Time_Order_picked'] = pd.to_timedelta(df['Time_Order_picked']).hour
     df['Time_Order_picked_formatted'] = (
         df['Order_Date']
         + np.where(df['Time_Order_picked'] < df['Time_Orderd'], pd.DateOffset(days=1), pd.DateOffset(days=0))
