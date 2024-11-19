@@ -138,7 +138,7 @@ def set_background_image(image_url):
 
 # Call function to set the background image
 # Replace 'your_image_url' with the URL of your image or path to your local image
-set_background_image('https://zeew.eu/wp-content/uploads/2024/06/Restaurant-Online-Food-Delivery-1.webp')
+set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpeg')
 
 if st.button("Get ETA for Delivery!"):
     # Prepare input data for the model
