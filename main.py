@@ -69,9 +69,10 @@ def set_background_image(image_url):
         <style>
         .stApp {{
             background: url({image_url});
-            background-size: cover;
+            background-size: 1280px 1280px;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-position: center;
             color: white;
         }}
         .stTextInput, .stNumberInput, .stSelectbox {{
