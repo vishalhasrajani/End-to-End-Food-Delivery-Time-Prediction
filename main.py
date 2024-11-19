@@ -72,7 +72,7 @@ def set_background_image(image_url):
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: white;
+            color: black;  /* Change text color to black */
         }}
         .stTextInput, .stNumberInput, .stSelectbox {{
             background: rgba(255, 255, 255, 0.8);
@@ -94,17 +94,9 @@ def set_background_image(image_url):
 # Set background
 set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpeg')
 
-# Rainbow text function using multiple spans
-def rainbow_text(text):
-    colors = ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red']
-    colored_text = ''.join([f'<span style="color: {color};">{letter}</span>' for color, letter in zip(colors * (len(text) // len(colors) + 1), text)])
-    return colored_text
-
 # Title
-st.markdown(f'<h1 style="font-size: 36px; font-weight: bold;">{rainbow_text("🚴‍♂️ Delivery Time Prediction")}</h1>', unsafe_allow_html=True)
-st.markdown(f'<p style="font-size: 24px;">{rainbow_text("Predict the ETA for food deliveries using advanced machine learning models.")}</p>', unsafe_allow_html=True)
-
-
+st.title('🚴‍♂️ Delivery Time Prediction')
+st.markdown("Predict the ETA for food deliveries using advanced machine learning models.")
 
 # Input Form
 with st.form(key="input_form"):
