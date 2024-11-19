@@ -92,7 +92,7 @@ def set_background_image(image_url):
     )
 
 # Set background
-set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpg')
+set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpeg')
 
 # Title
 st.title('🚴‍♂️ Delivery Time Prediction')
