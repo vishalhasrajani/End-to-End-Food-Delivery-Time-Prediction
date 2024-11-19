@@ -94,13 +94,16 @@ def set_background_image(image_url):
 # Set background
 set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpeg')
 
-# Add rainbow text style
+# Rainbow text function using multiple spans
 def rainbow_text(text):
-    return f'<span style="font-size: 36px; background: -webkit-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text; color: transparent;">{text}</span>'
+    colors = ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red']
+    colored_text = ''.join([f'<span style="color: {color};">{letter}</span>' for color, letter in zip(colors * (len(text) // len(colors) + 1), text)])
+    return colored_text
 
 # Title
-st.title(rainbow_text('🚴‍♂️ Delivery Time Prediction'))
-st.markdown(rainbow_text("Predict the ETA for food deliveries using advanced machine learning models."))
+st.markdown(f'<h1 style="font-size: 36px; font-weight: bold;">{rainbow_text("🚴‍♂️ Delivery Time Prediction")}</h1>', unsafe_allow_html=True)
+st.markdown(f'<p style="font-size: 24px;">{rainbow_text("Predict the ETA for food deliveries using advanced machine learning models.")}</p>', unsafe_allow_html=True)
+
 
 
 # Input Form
