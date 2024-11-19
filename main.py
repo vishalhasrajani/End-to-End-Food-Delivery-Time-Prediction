@@ -94,9 +94,14 @@ def set_background_image(image_url):
 # Set background
 set_background_image('https://zeew.eu/wp-content/uploads/2024/06/food-delivery-apps.jpeg')
 
+# Add rainbow text style
+def rainbow_text(text):
+    return f'<span style="font-size: 36px; background: -webkit-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text; color: transparent;">{text}</span>'
+
 # Title
-st.title('🚴‍♂️ Delivery Time Prediction')
-st.markdown("Predict the ETA for food deliveries using advanced machine learning models.")
+st.title(rainbow_text('🚴‍♂️ Delivery Time Prediction'))
+st.markdown(rainbow_text("Predict the ETA for food deliveries using advanced machine learning models."))
+
 
 # Input Form
 with st.form(key="input_form"):
